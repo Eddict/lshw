@@ -18,6 +18,9 @@
 #include <limits.h>
 #include <unistd.h>
 #include <limits.h>
+#ifndef PATH_MAX
+#define PATH_MAX 4096
+#endif
 #include <sys/utsname.h>
 
 using namespace hw;
