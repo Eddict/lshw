@@ -41,6 +41,7 @@ ifneq ($(shell $(LD) --help 2| grep -- --as-needed), )
 endif
 LDSTATIC=-static
 LIBS+=-llshw
+LIBS+=-lintl
 ifneq ($(NO_VERSION_CHECK), 1)
 LIBS+=-lresolv
 endif
