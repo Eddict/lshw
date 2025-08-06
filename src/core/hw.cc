@@ -23,9 +23,6 @@
 #ifndef PATH_MAX
 #define PATH_MAX 4096
 #endif
-#ifndef LONG_BIT
-#define LONG_BIT (sizeof(long) * 8)
-#endif
 
 using namespace hw;
 

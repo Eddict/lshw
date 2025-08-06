@@ -12,6 +12,10 @@
 #include <stdlib.h>
 #include <dirent.h>
 #include <limits.h>
+// limits.h related definitions
+#ifndef LONG_BIT
+#define LONG_BIT (sizeof(long) * 8)
+#endif
 
 __ID("@(#) $Id: mem.cc 1352 2006-05-27 23:54:13Z ezix $");
 
