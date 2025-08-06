@@ -18,10 +18,14 @@
 #include <limits.h>
 #include <unistd.h>
 #include <limits.h>
+#include <sys/utsname.h>
+// limits.h related definitions
 #ifndef PATH_MAX
 #define PATH_MAX 4096
 #endif
-#include <sys/utsname.h>
+#ifndef LONG_BIT
+#define LONG_BIT (sizeof(long) * 8)
+#endif
 
 using namespace hw;
 
